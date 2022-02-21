@@ -10,19 +10,19 @@ export default function LoginForm({params}) {
     const handleSubmit = event => {
         event.preventDefault()
         alert('You have submitted the form.')
-        navigate("/dashboard");
+        navigate("/Principal");
     }
 
     return (
         <>
-            <form class="form-auth-small" onSubmit={handleSubmit}>
+            <form className="form-auth-small" onSubmit={handleSubmit}>
                 <EmailInput Label='Email' DefaultValue='mgodoyh@vitapro.com.pe'></EmailInput>
-                <div class="form-group clearfix">
-                    <label class="fancy-checkbox element-left custom-bgcolor-blue">
+                <div className="form-group clearfix">
+                    <label className="fancy-checkbox element-left custom-bgcolor-blue">
                         <input type="checkbox" />
-                        <span class="text-muted">Recuerdame</span>
+                        <span className="text-muted">Recuerdame</span>
                     </label>
-                    <span class="helper-text element-right">No cuentas con una cuenta? <a href="page-register.html">Registrar</a></span>
+                    <span className="helper-text element-right">No cuentas con una cuenta? <a href="page-register.html">Registrar</a></span>
                 </div>
                 <SubmitButton texto='Iniciar Sesion'></SubmitButton>
             </form>
